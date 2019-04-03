@@ -4,7 +4,7 @@
   "description": "A starter kit for building a custom bot for your website with Botkit Studio",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "nodemon bot.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -18,7 +18,9 @@
     "querystring": "^0.2.0",
     "request": "^2.88.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/howdyai/botkit-starter-web.git"

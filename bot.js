@@ -26,16 +26,6 @@ var bot_options = {
     replyWithTyping: true,
 };
 
-// Use a mongo database if specified, otherwise store in a JSON file local to the app.
-// Mongo is automatically configured when deploying to Heroku
-if (process.env.MONGO_URI) {
-  // create a custom db access method
-  var db = require(__dirname + '/components/database.js')({});
-  bot_options.storage = db;
-} else {
-    bot_options.json_file_store = __dirname + '/.data/db/'; // store user data in a simple JSON format
-}
-
 // Create the Botkit controller, which controls all instances of the bot.
 var controller = Botkit.socketbot(bot_options);
 
