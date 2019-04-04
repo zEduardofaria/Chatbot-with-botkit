@@ -1,0 +1,314 @@
+{
+  "Fatos_UltimoID": 4,
+  "fatos": [
+    {
+      "Id": 0,
+      "Nome": "Choveu ontem",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 1,
+      "Nome": "Temperatura do dia",
+      "Tipo": 2,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "0",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "40",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Nome": "Cor do céu",
+      "Tipo": 1,
+      "Respostas": [
+        {
+          "Id": 1,
+          "Descricao": "Azul",
+          "Valor": 0
+        },
+        {
+          "Id": 2,
+          "Descricao": "Cinza",
+          "Valor": 0
+        },
+        {
+          "Id": 3,
+          "Descricao": "Laranja",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Nome": "Vai chover amanhã",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    }
+  ],
+  "resposta_fatos_UltimoID": 0,
+  "regras_UltimoID": 10,
+  "regras": [
+    {
+      "Id": 7,
+      "Nome": "Será que chove amanhã",
+      "Condicao": [
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 0,
+            "Nome": "Choveu ontem",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": true
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 1,
+            "Nome": "Temperatura do dia",
+            "Tipo": 2,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "0",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "40",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": null,
+            "Valor": 21
+          },
+          "Primeiro": false
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 2,
+            "Nome": "Cor do céu",
+            "Tipo": 1,
+            "Respostas": [
+              {
+                "Id": 1,
+                "Descricao": "Azul",
+                "Valor": 0
+              },
+              {
+                "Id": 2,
+                "Descricao": "Cinza",
+                "Valor": 0
+              },
+              {
+                "Id": 3,
+                "Descricao": "Laranja",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 2,
+            "Descricao": "Cinza",
+            "Valor": 0
+          },
+          "Primeiro": false
+        }
+      ],
+      "condicaoObjetivos": [
+        {
+          "Fato": {
+            "Id": 3,
+            "Nome": "Vai chover amanhã",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          }
+        }
+      ]
+    },
+    {
+      "Id": 9,
+      "Nome": "Não chove eu acho",
+      "Condicao": [
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 0,
+            "Nome": "Choveu ontem",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 1,
+            "Descricao": "Falso",
+            "Valor": 0
+          },
+          "Primeiro": true
+        },
+        {
+          "Conectivo": 1,
+          "Fato": {
+            "Id": 2,
+            "Nome": "Cor do céu",
+            "Tipo": 1,
+            "Respostas": [
+              {
+                "Id": 1,
+                "Descricao": "Azul",
+                "Valor": 0
+              },
+              {
+                "Id": 2,
+                "Descricao": "Cinza",
+                "Valor": 0
+              },
+              {
+                "Id": 3,
+                "Descricao": "Laranja",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 1,
+            "Descricao": "Azul",
+            "Valor": 0
+          },
+          "Primeiro": false
+        }
+      ],
+      "condicaoObjetivos": [
+        {
+          "Fato": {
+            "Id": 3,
+            "Nome": "Vai chover amanhã",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 1,
+            "Descricao": "Falso",
+            "Valor": 0
+          }
+        }
+      ]
+    }
+  ],
+  "condição_UltimoID": 0,
+  "condição": [],
+  "ObjetivosAlvo": [
+    {
+      "Id": 3,
+      "Nome": "Vai chover amanhã",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    }
+  ]
+}
