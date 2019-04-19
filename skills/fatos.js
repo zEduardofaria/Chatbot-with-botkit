@@ -1,24 +1,61 @@
-const database = require('../data/database')
+const database = require('../data/database'),
+    Fuse = require('fuse.js');
 
-module.exports = function(controller) {
-
-    // Lista todos os fatos
-    controller.hears(['fatos', 'variaveis'], 'message_received', function(bot, message) {
-        const fatos = database.fatos
-        let resposta = ''
-
-        if (fatos < 1) {
-            return bot.reply(message, 'Ainda não temos fatos cadastrados no nosso sistema especialista. :(')
-        }
+    const tiposFatos = {
+        0: 'univalorado',
+        1: 'multivalorado',
+        2: 'numérico'
+    }
+    
+    module.exports = function(controller) {
         
-        resposta = 'Estes são todos os fatos cadastrados no nosso sistema especialista: \n\n'
+        // Lista todos os fatos
+        controller.hears(['fatos', 'variaveis'], 'message_received', function(bot, message) {
+            const fatos = database.fatos
+            let resposta = ''
+            
+            if (fatos < 1) {
+                return bot.reply(message, 'Ainda não temos fatos cadastrados no nosso sistema especialista. :(')
+            }
+            
+            resposta = 'Estes são todos os fatos cadastrados no nosso sistema especialista: \n\n'
+            
+            for(fato of fatos) {
+                resposta = resposta + `* ${fato.Nome} \n`
+            }
+            
+            resposta = resposta + '\n Para detalhar um fato basta escrever `fato NomeDoFato`'
+            
+            bot.reply(message, resposta)
+        });
+        
+        // Detalhar um único fato
+        controller.hears(['fato (.*)'],'message_received', function(bot, message) {
+            const fatos = database.fatos,
+             fato = message.match[1],
 
-        for(fato of fatos) {
-            resposta = resposta + `* ${fato.Nome} \n`
-        }
+             options = {
+                keys: ['Nome'],
+                threshold: 0.1,
+              },
+                fuse = new Fuse(fatos, options),
+                pesquisado = fuse.search(fato)[0]
 
-        resposta = resposta + '\n Para detalhar um fato basta escrever `fato NomeDoFato`'
+                if (pesquisado.Tipo === 2) {
+                    let resposta = `O fato **${pesquisado.Nome}** é do tipo **${tiposFatos[pesquisado.Tipo]}** e as respostas podem variar de **${pesquisado.Respostas[0].Descricao}** a **${pesquisado.Respostas[1].Descricao}**`
+                    
+                    bot.reply(message, resposta)
+                } else {
+                    let resposta = `O fato **${pesquisado.Nome}** é do tipo **${tiposFatos[pesquisado.Tipo]}** e contém as seguintes opções de resposta: \n\n`
 
-        bot.reply(message, resposta)
+                    for(const opcao of pesquisado.Respostas) {
+                        resposta = resposta + `* ${opcao.Descricao} \n`
+                    }
+
+                    bot.reply(message, resposta)            
+                }
+
+
     });
+
 }
