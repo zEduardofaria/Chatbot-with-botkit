@@ -46,7 +46,7 @@ module.exports = function(controller) {
 
 
             if (!pesquisado) {
-                return bot.reply(message, 'Não achamos essa regra :/')
+                return bot.reply(message, 'Não achamos essa regra :/ Mas tente escrever algo mais próximo do nome salvo no nosso banco. Se não souber qual é o nome, digite **regras** para você saber quais temos salvas.')
             }
             
             let resposta = `A regra **${pesquisado.Nome}** segue a seguinte ordem de validação: \n\n`
@@ -74,8 +74,6 @@ module.exports = function(controller) {
               },
                 fuse = new Fuse(regras, options),
                 pesquisado = fuse.search(regra)[0]
-
-                console.log(pesquisado)
         
         const respostas = []
         
@@ -103,10 +101,50 @@ module.exports = function(controller) {
                 
         const tratarRespostas = (respostas) => {
             let resultadoRegra = true
-
+            let temOu = false
+            
+            // Checa se tem Ou
             for (const pergunta in pesquisado.Condicao) {
-                if (pesquisado.Condicao[pergunta].Resposta.Descricao.toLowerCase() !== respostas[pergunta].text) {
-                    resultadoRegra = false
+                if (pesquisado.Condicao[pergunta].Conectivo === 1) {
+                    temOu = true
+                    break
+                }
+            } 
+
+            if (temOu) {
+                resultadoRegra = false
+                // Tem conectivos são Ou
+                // Checa até achar uma resposta válida, e se achar para o loop
+                for (const pergunta in pesquisado.Condicao) {
+                    // Checa se operador é Igual (Se é 0)
+                    if (pesquisado.Condicao[pergunta].Operador === 0) {
+                        if (pesquisado.Condicao[pergunta].Resposta.Descricao.toLowerCase() === respostas[pergunta].text) {
+                            resultadoRegra = true
+                            break
+                        }
+                    } else {
+                        if (pesquisado.Condicao[pergunta].Resposta.Descricao.toLowerCase() !== respostas[pergunta].text) {
+                            resultadoRegra = true
+                            break
+                        }
+                    }
+                }
+            } else {
+                // Todos conectivos são E
+                // Checa todas as respostas, e se achar uma diferente do valor que deveria ser para o loop
+                for (const pergunta in pesquisado.Condicao) {
+                    // Checa se operador é Igual (Se é 0)
+                    if (pesquisado.Condicao[pergunta].Operador === 0) {
+                        if (pesquisado.Condicao[pergunta].Resposta.Descricao.toLowerCase() !== respostas[pergunta].text) {
+                            resultadoRegra = false
+                            break
+                        }
+                    } else {
+                        if (pesquisado.Condicao[pergunta].Resposta.Descricao.toLowerCase() === respostas[pergunta].text) {
+                            resultadoRegra = false
+                            break
+                        }
+                    }
                 }
             }
             
