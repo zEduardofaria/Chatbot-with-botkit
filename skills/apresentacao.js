@@ -43,15 +43,7 @@ module.exports = function(controller) {
             {
               title: 'Regras',
               payload: 'regra',
-            },
-            {
-              title: 'Detalhar um item',
-              payload: 'community',
-            },
-            {
-              title: 'Testar uma regra',
-              payload: 'contact us',
-            },
+            }
           ]
         },[
           {
@@ -90,15 +82,15 @@ module.exports = function(controller) {
                 
         // set up docs threads
         convo.addMessage({
-          text: 'Para ter acesso a todos os fatos cadastrados no sistema, basta digitar `fatos`.',
+          text: 'Para ter acesso a todos os fatos cadastrados no sistema, basta digitar `fatos`. \n\n Para detalhar um fato digite `fato NomeDoFato`.',
         },'fact');
 
         convo.addMessage({
-          text: 'Para ter acesso a todos os objetivos cadastrados no sistema, basta digitar `objetivos`.',
+          text: 'Para ter acesso a todos os objetivos cadastrados no sistema, basta digitar `objetivos`. \n\n Para detalhar um objetivo digite `objetivo NomeDoObjetivo`.',
         },'goal');
 
         convo.addMessage({
-          text: 'Para ter acesso a todas as regras cadastradas no sistema, basta digitar `regras`.',
+          text: 'Para ter acesso a todas as regras cadastradas no sistema, basta digitar `regras`. \n\n Para detalhar uma regra digite `regra NomeDaRegra`. \n\n Para testar uma regra digite `play NomeDaRegra`.',
         },'rule');
 
         convo.addMessage({
