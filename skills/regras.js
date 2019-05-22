@@ -44,7 +44,6 @@ module.exports = function(controller) {
             fuse = new Fuse(regras, options),
             pesquisado = fuse.search(regra)[0]
 
-
             if (!pesquisado) {
                 return bot.reply(message, 'Não achamos essa regra :/ Mas tente escrever algo mais próximo do nome salvo no nosso banco. Se não souber qual é o nome, digite **regras** para você saber quais temos salvas.')
             }
@@ -75,6 +74,10 @@ module.exports = function(controller) {
                 fuse = new Fuse(regras, options),
                 pesquisado = fuse.search(regra)[0]
         
+                if (!pesquisado) {
+                    bot.reply(message, 'Não achamos essa regra :/ Mas tente escrever algo mais próximo do nome salvo no nosso banco. Se não souber qual é o nome, digite **regras** para você saber quais temos salvas.')
+                }
+
         const respostas = []
         
         bot.createConversation(message, (err, convo) => {

@@ -41,6 +41,12 @@ const database = require('../data/database'),
                 fuse = new Fuse(fatos, options),
                 pesquisado = fuse.search(fato)[0]
 
+                console.log("TCL: pesquisado", pesquisado)
+
+                if (!pesquisado) {
+                    bot.reply(message, 'Não temos este fato cadastrado no sistema. Digite **fatos** para você saber quais fatos temos salvo.')
+                }
+
                 if (pesquisado.Tipo === 2) {
                     let resposta = `O fato **${pesquisado.Nome}** é do tipo **${tiposFatos[pesquisado.Tipo]}** e as respostas podem variar de **${pesquisado.Respostas[0].Descricao}** a **${pesquisado.Respostas[1].Descricao}**`
                     

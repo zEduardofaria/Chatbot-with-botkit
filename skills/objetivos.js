@@ -41,6 +41,10 @@ const database = require('../data/database'),
                 fuse = new Fuse(objetivos, options),
                 pesquisado = fuse.search(objetivo)[0]
 
+                if (!pesquisado) {
+                    bot.reply(message, 'Não temos este objetivo cadastrado no sistema. Digite **objetivos** para você saber quais objetivos temos salvo.')
+                }
+
                 if (pesquisado.Tipo === 2) {
                     let resposta = `O objetivo **${pesquisado.Nome}** é do tipo **${tiposObjetivos[pesquisado.Tipo]}** e as respostas podem variar de **${pesquisado.Respostas[0].Descricao}** a **${pesquisado.Respostas[1].Descricao}**`
                     
