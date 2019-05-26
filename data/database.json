@@ -1,9 +1,26 @@
 {
-  "Fatos_UltimoID": 4,
+  "Fatos_UltimoID": 16,
   "fatos": [
     {
       "Id": 0,
-      "Nome": "Choveu ontem",
+      "Nome": "Problema 1 - vazamento de agua para motor",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 123,
+      "Nome": "Fato do Enock",
       "Tipo": 0,
       "Respostas": [
         {
@@ -20,46 +37,245 @@
     },
     {
       "Id": 1,
-      "Nome": "Temperatura do dia",
-      "Tipo": 2,
+      "Nome": "oleo na cor branca",
+      "Tipo": 0,
       "Respostas": [
         {
           "Id": 0,
-          "Descricao": "0",
+          "Descricao": "Verdadeiro",
           "Valor": 0
         },
         {
           "Id": 1,
-          "Descricao": "40",
+          "Descricao": "Falso",
           "Valor": 0
         }
       ]
     },
     {
       "Id": 2,
-      "Nome": "Cor do céu",
-      "Tipo": 1,
+      "Nome": "Problema 2 - bateria descarregada",
+      "Tipo": 0,
       "Respostas": [
         {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
           "Id": 1,
-          "Descricao": "Azul",
-          "Valor": 0
-        },
-        {
-          "Id": 2,
-          "Descricao": "Cinza",
-          "Valor": 0
-        },
-        {
-          "Id": 3,
-          "Descricao": "Laranja",
+          "Descricao": "Falso",
           "Valor": 0
         }
       ]
     },
     {
       "Id": 3,
-      "Nome": "Vai chover amanhã",
+      "Nome": "carro nao liga",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Nome": "estalo ao tentar ligar o carro",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Nome": "carro funciona no tranco",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 6,
+      "Nome": "Problema 3 - Correia dentada",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "Nome": "barulhos no motor ao tentar ligar o carro",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 8,
+      "Nome": "Problema 4 - freios necessitam de reparo",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 9,
+      "Nome": "ruido nas frenagens",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 10,
+      "Nome": "necessidade de pressionar o pedal do freio ate o final do curso",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 11,
+      "Nome": "dificuldade de frenagens com baixa velocidade",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 12,
+      "Nome": "nivel de oleo de freio correto",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 13,
+      "Nome": "Problema 5 - nivel de oleo de freio",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 14,
+      "Nome": "pedal de freio duro",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 15,
+      "Nome": "nivel de oleo de freio incorreto",
       "Tipo": 0,
       "Respostas": [
         {
@@ -76,17 +292,77 @@
     }
   ],
   "resposta_fatos_UltimoID": 0,
-  "regras_UltimoID": 10,
+  "regras_UltimoID": 14,
   "regras": [
     {
-      "Id": 7,
-      "Nome": "Será que chove amanhã",
+      "Id": 0,
+      "Nome": "Problema 1",
       "Condicao": [
         {
           "Conectivo": 0,
           "Fato": {
+            "Id": 1,
+            "Nome": "oleo na cor branca",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
             "Id": 0,
-            "Nome": "Choveu ontem",
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": true
+        }
+      ],
+      "condicaoObjetivos": [
+        {
+          "Fato": {
+            "Id": 0,
+            "Nome": "Problema 1 - vazamento de agua para motor",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          }
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Nome": "Problema 2",
+      "Condicao": [
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 3,
+            "Nome": "carro nao liga",
             "Tipo": 0,
             "Respostas": [
               {
@@ -112,18 +388,18 @@
         {
           "Conectivo": 0,
           "Fato": {
-            "Id": 1,
-            "Nome": "Temperatura do dia",
-            "Tipo": 2,
+            "Id": 4,
+            "Nome": "estalo ao tentar ligar o carro",
+            "Tipo": 0,
             "Respostas": [
               {
                 "Id": 0,
-                "Descricao": "0",
+                "Descricao": "Verdadeiro",
                 "Valor": 0
               },
               {
                 "Id": 1,
-                "Descricao": "40",
+                "Descricao": "Falso",
                 "Valor": 0
               }
             ]
@@ -131,39 +407,34 @@
           "Operador": 0,
           "Resposta": {
             "Id": 0,
-            "Descricao": "15",
-            "Valor": 21
+            "Descricao": "Verdadeiro",
+            "Valor": 0
           },
           "Primeiro": false
         },
         {
           "Conectivo": 0,
           "Fato": {
-            "Id": 2,
-            "Nome": "Cor do céu",
-            "Tipo": 1,
+            "Id": 5,
+            "Nome": "carro funciona no tranco",
+            "Tipo": 0,
             "Respostas": [
               {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
                 "Id": 1,
-                "Descricao": "Azul",
-                "Valor": 0
-              },
-              {
-                "Id": 2,
-                "Descricao": "Cinza",
-                "Valor": 0
-              },
-              {
-                "Id": 3,
-                "Descricao": "Laranja",
+                "Descricao": "Falso",
                 "Valor": 0
               }
             ]
           },
           "Operador": 0,
           "Resposta": {
-            "Id": 2,
-            "Descricao": "Cinza",
+            "Id": 0,
+            "Descricao": "Verdadeiro",
             "Valor": 0
           },
           "Primeiro": false
@@ -172,8 +443,95 @@
       "condicaoObjetivos": [
         {
           "Fato": {
+            "Id": 2,
+            "Nome": "Problema 2 - bateria descarregada",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          }
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Nome": "Problema 3",
+      "Condicao": [
+        {
+          "Conectivo": 0,
+          "Fato": {
             "Id": 3,
-            "Nome": "Vai chover amanhã",
+            "Nome": "carro nao liga",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": true
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 7,
+            "Nome": "barulhos no motor ao tentar ligar o carro",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": false
+        }
+      ],
+      "condicaoObjetivos": [
+        {
+          "Fato": {
+            "Id": 6,
+            "Nome": "Problema 3 - Correia dentada",
             "Tipo": 0,
             "Respostas": [
               {
@@ -199,13 +557,13 @@
     },
     {
       "Id": 9,
-      "Nome": "Não chove eu acho",
+      "Nome": "Problema 4",
       "Condicao": [
         {
           "Conectivo": 0,
           "Fato": {
-            "Id": 0,
-            "Nome": "Choveu ontem",
+            "Id": 9,
+            "Nome": "ruido nas frenagens",
             "Tipo": 0,
             "Respostas": [
               {
@@ -222,40 +580,89 @@
           },
           "Operador": 0,
           "Resposta": {
-            "Id": 1,
-            "Descricao": "Falso",
+            "Id": 0,
+            "Descricao": "Verdadeiro",
             "Valor": 0
           },
           "Primeiro": true
         },
         {
-          "Conectivo": 1,
+          "Conectivo": 0,
           "Fato": {
-            "Id": 2,
-            "Nome": "Cor do céu",
-            "Tipo": 1,
+            "Id": 10,
+            "Nome": "necessidade de pressionar o pedal do freio ate o final do curso",
+            "Tipo": 0,
             "Respostas": [
               {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
                 "Id": 1,
-                "Descricao": "Azul",
-                "Valor": 0
-              },
-              {
-                "Id": 2,
-                "Descricao": "Cinza",
-                "Valor": 0
-              },
-              {
-                "Id": 3,
-                "Descricao": "Laranja",
+                "Descricao": "Falso",
                 "Valor": 0
               }
             ]
           },
           "Operador": 0,
           "Resposta": {
-            "Id": 1,
-            "Descricao": "Azul",
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": false
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 11,
+            "Nome": "dificuldade de frenagens com baixa velocidade",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": false
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 12,
+            "Nome": "nivel de oleo de freio correto",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
             "Valor": 0
           },
           "Primeiro": false
@@ -264,8 +671,8 @@
       "condicaoObjetivos": [
         {
           "Fato": {
-            "Id": 3,
-            "Nome": "Vai chover amanhã",
+            "Id": 8,
+            "Nome": "Problema 4 - freios necessitam de reparo",
             "Tipo": 0,
             "Respostas": [
               {
@@ -282,8 +689,149 @@
           },
           "Operador": 0,
           "Resposta": {
-            "Id": 1,
-            "Descricao": "Falso",
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          }
+        }
+      ]
+    },
+    {
+      "Id": 13,
+      "Nome": "Problema 5",
+      "Condicao": [
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 10,
+            "Nome": "necessidade de pressionar o pedal do freio ate o final do curso",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": true
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 11,
+            "Nome": "dificuldade de frenagens com baixa velocidade",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": false
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 14,
+            "Nome": "pedal de freio duro",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": false
+        },
+        {
+          "Conectivo": 0,
+          "Fato": {
+            "Id": 15,
+            "Nome": "nivel de oleo de freio incorreto",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
+            "Valor": 0
+          },
+          "Primeiro": false
+        }
+      ],
+      "condicaoObjetivos": [
+        {
+          "Fato": {
+            "Id": 13,
+            "Nome": "Problema 5 - nivel de oleo de freio",
+            "Tipo": 0,
+            "Respostas": [
+              {
+                "Id": 0,
+                "Descricao": "Verdadeiro",
+                "Valor": 0
+              },
+              {
+                "Id": 1,
+                "Descricao": "Falso",
+                "Valor": 0
+              }
+            ]
+          },
+          "Operador": 0,
+          "Resposta": {
+            "Id": 0,
+            "Descricao": "Verdadeiro",
             "Valor": 0
           }
         }
@@ -294,8 +842,76 @@
   "condição": [],
   "ObjetivosAlvo": [
     {
-      "Id": 3,
-      "Nome": "Vai chover amanhã",
+      "Id": 0,
+      "Nome": "Problema 1 - vazamento de agua para motor",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Nome": "Problema 2 - bateria descarregada",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Nome": "Problema 3 - Correia dentada",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 6,
+      "Nome": "Problema 4 - freios necessitam de reparo",
+      "Tipo": 0,
+      "Respostas": [
+        {
+          "Id": 0,
+          "Descricao": "Verdadeiro",
+          "Valor": 0
+        },
+        {
+          "Id": 1,
+          "Descricao": "Falso",
+          "Valor": 0
+        }
+      ]
+    },
+    {
+      "Id": 6,
+      "Nome": "Problema 5 - nivel de oleo de freio",
       "Tipo": 0,
       "Respostas": [
         {

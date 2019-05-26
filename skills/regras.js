@@ -97,8 +97,6 @@ module.exports = function(controller) {
                 }, {}, atual)            
             }           
             
-            convo.addMessage('Tudo ok e ready for rock n roll!', 'end')
-            
             convo.activate();
         })
                 
